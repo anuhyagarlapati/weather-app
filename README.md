@@ -38,6 +38,7 @@ npm start
 - Provides humidity, wind speed, and cloud cover
 
 **Screenshots** 
-![Weather App Screenshot 1](https://github.com/user-attachments/assets/165f4abb-456c-49f6-9d64-829b4c59e159)  
-![Weather App Screenshot 2](https://github.com/user-attachments/assets/2560e202-bc49-47ad-bcab-0198c9a18513)
+<img width="1076" height="689" alt="image" src="https://github.com/user-attachments/assets/f126cdf9-c45a-47e6-9ba2-46903c1db84c" />
+<img width="1067" height="651" alt="image" src="https://github.com/user-attachments/assets/9244b9ed-e00a-45aa-b578-1aea25f25206" />
+
   
