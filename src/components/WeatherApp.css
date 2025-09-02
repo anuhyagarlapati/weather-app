@@ -1,0 +1,171 @@
+/* Background & container */
+.weather-container {
+    max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        font-family: Arial, sans-serif;
+}
+
+/* Search bar */
+/* Parent container: no background, no border */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0;
+    /* remove padding */
+    background: transparent;
+    /* no background */
+    border: none;
+    /* remove border */
+}
+
+/* Input box styling */
+.search-box input {
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    /* only thin input border */
+    border-radius: 8px;
+    outline: none;
+    width: 300px;
+    /* adjust as needed */
+    background: rgba(255, 255, 255, 0.1);
+    /* subtle transparency */
+    color: white;
+    font-size: 16px;
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button styling */
+.search-box button {
+    margin-left: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(30, 144, 255, 0.3);
+    /* subtle transparency */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: rgba(30, 144, 255, 0.5);
+}
+
+
+/* Current weather */
+.weather-current {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.weather-current h2 {
+    margin-bottom: 10px;
+}
+
+.current-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-left {
+    text-align: left;
+}
+
+.current-right {
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.weather-current .icon {
+    font-size: 60px;
+}
+
+.weather-current .temp {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Hourly forecast */
+.hourly-container {
+    margin-bottom: 30px;
+}
+
+.hourly-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.hourly-item .icon {
+    font-size: 28px;
+}
+
+/* Weekly forecast - table-like layout */
+.weekly-container {
+    margin-bottom: 20px;
+}
+
+.weekly-list {
+    display: flex;
+    flex-direction: column;
+    /* stack items vertically */
+    gap: 10px;
+}
+
+.weekly-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.weekly-item .day {
+    flex: 1;
+    font-weight: bold;
+}
+
+.weekly-item .icon {
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+}
+
+.weekly-item .desc {
+    flex: 2;
+    font-size: 14px;
+}
+
+.weekly-item .temps {
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.weekly-item p {
+    margin: 2px 0;
+}
